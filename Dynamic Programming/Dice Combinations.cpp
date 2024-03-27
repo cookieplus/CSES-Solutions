@@ -18,7 +18,7 @@ Phân tích:
 	dp[0] = 1;
 	dp[1] = dp[0];
 	dp[2] = dp[0] + dp[1] (tổng 0 thêm số 2; tổng 1 thêm số 1)
-	dp[3] = dpơ0] + dp[1] + dp[2]
+	dp[3] = dp[0] + dp[1] + dp[2]
 	...
 
 	dp[i] = dp[i-6] + dp[i-5]... + dp[i-1]
