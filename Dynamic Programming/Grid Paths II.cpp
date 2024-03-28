@@ -1,3 +1,24 @@
+/**
+Grid Paths
+==========
+Đề bài:
+	Grid n x n với 1 số điểm không được đi qua (trap).
+	Chỉ có thể sang phải hoặc đi xuống.
+	Tính số cách đi từ góc trái trên xuống góc phải dưới.
+	Giới hạn: 1 <= n <= 1000.
+	In:
+		n
+		n line, mỗi line n dấu (.) hoặc dấu (*)
+	Out:
+		Số cách.
+Phân tích:
+	Gọi dp[r][c] là số cách để đi từ điểm (1,1) tới điểm (r, c).
+	Để đi đến (r, c) có thể đi từ 
+	đi xuống từ (r-1,c) 
+	sang phải từ (r, c-1)
+	dp[r][c] = dp[r-1][c] + dp[r][c-1]
+	Tất nhiên với điều kiện các ô tương ứng (r-1, c), (r, c-1) có thể đến được.
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
