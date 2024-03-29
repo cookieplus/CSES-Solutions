@@ -97,7 +97,7 @@ Ban đầu ở tầng 1, chỉ có dạng 1, 2.
 	dp[n][4] = dp[n-1][1] + dp[n-1][3] + dp[n-1][4] + dp[n-1][5]
 	dp[n][5] = dp[n-1][1] + dp[n-1][3] + dp[n-1][4] + dp[n-1][5]
 	dp[n][6] = dp[n-1][1] + dp[n-1][2] + dp[n-1][6]
-	Tổng số cách ở tầng k = dp[n][1] + dp[n][2] + dp[n][3] + dp[n][4] + dp[n][5] + dp[n][6]
+	Tổng số cách ở tầng n = dp[n][1] + dp[n][2] + dp[n][3] + dp[n][4] + dp[n][5] + dp[n][6]
 
 */    
 #include <bits/stdc++.h>
